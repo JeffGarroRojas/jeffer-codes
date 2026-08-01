@@ -99,3 +99,27 @@ uvicorn app:app --port 8123
 - [ ] Contactar 20 negocios locales en Google Maps (barberías PZ)
 - [ ] Agregar servicio de bot de WhatsApp en la landing
 - [ ] Primer cliente → $200
+
+---
+
+## Cómo popularizar el sitio
+
+### Gratis y rápido (esta semana)
+- **Google My Business** — crear perfil en business.google.com, aparecés en Maps cuando buscan "programador freelance pérez zeledón" o "automatización python costa rica". Requiere verificación por postal o teléfono.
+- **LinkedIn** — publicar que ofrecés el servicio con el link del sitio. Alcance orgánico alto para servicios B2B.
+- **Grupos de Facebook locales** — buscar "emprendedores pérez zeledón", "negocios san isidro general" y publicar el servicio.
+
+### Gratis pero tarda (1-3 meses)
+- **Workana / Upwork** — crear perfil, tomar primeros proyectos baratos para conseguir reseñas. Con 3-5 reseñas los clientes llegan solos.
+- **SEO** — el sitio ya tiene meta description. Con el tiempo aparece en Google para búsquedas como "scraping python costa rica" o "bot whatsapp negocio cr".
+
+### La secuencia que funciona
+1. Primeros 2 clientes → contacto directo por WhatsApp/Maps
+2. Pedirles reseña en Google → aparecés en Maps
+3. Reseñas traen más clientes → ciclo se repite
+
+### Pendiente de hacer
+- [ ] Crear perfil en Google My Business (business.google.com)
+- [ ] Publicar en LinkedIn con link del sitio
+- [ ] Publicar en grupos de Facebook de PZ
+- [ ] Crear perfil en Workana con primeros servicios listados
