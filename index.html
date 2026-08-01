@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Automatizaciones y scraping en Python a medida. Ahorra horas de trabajo manual con scripts, bots y dashboards hechos para tu negocio.">
+  <title>Jeffer Codes — Automatización & Scraping en Python</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo">jeffer<span>.codes</span></a>
+      <nav class="nav__links">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto" class="btn btn--small">Contratar</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container">
+      <p class="hero__badge">Disponible para nuevos proyectos · respuesta en &lt; 24h</p>
+      <h1>Automatizo lo repetitivo para que <span class="accent">tu negocio crezca</span></h1>
+      <p class="hero__sub">
+        Scripts de scraping, bots y dashboards en Python que te devuelven horas
+        cada semana. Tu entregas el problema, yo el código que lo resuelve.
+      </p>
+      <div class="hero__actions">
+        <a href="#contacto" class="btn btn--primary">Pedir cotización gratis</a>
+        <a href="#muestra" class="btn btn--ghost">Ver muestra de código</a>
+      </div>
+      <ul class="hero__trust">
+        <li>✓ Entrega con código documentado</li>
+        <li>✓ Garantía de reembolso</li>
+        <li>✓ Soporte 2 semanas</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="servicios" class="section">
+    <div class="container">
+      <h2 class="section__title">Qué puedo construir por ti</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Web Scraping</h3>
+          <p>Extraigo datos de cualquier sitio: precios de competidores, listados, reseñas, contactos. Te entrego CSV, Excel o base de datos actualizada.</p>
+        </article>
+        <article class="card">
+          <h3>Automatización de tareas</h3>
+          <p>Reportes que se generan solos, archivos que se renombran, correos que se envían en horario. Lo que hagas a mano cada día, lo elimino.</p>
+        </article>
+        <article class="card">
+          <h3>Bots & integraciones</h3>
+          <p>Bots para procesar pedidos, conectar tu tienda con tu inventario, sincronizar hojas de cálculo y bases de datos.</p>
+        </article>
+        <article class="card">
+          <h3>Dashboards de datos</h3>
+          <p>Transformo tus datos crudos en gráficos claros para que tomes decisiones sin abrir Excel otra vez.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="muestra" class="section section--dark">
+    <div class="container">
+      <h2 class="section__title">Muestra real de lo que hago</h2>
+      <p class="section__lead">Así de simple es un scraping con Python. Sin promesas vacías: código que funciona.</p>
+      <pre class="code"><code><span class="kw">import</span> requests
+<span class="kw">import</span> csv
+
+resp = requests.get(<span class="str">"https://api.example.com/productos"</span>)
+productos = resp.json()
+
+<span class="kw">with</span> open(<span class="str">"productos.csv"</span>, <span class="str">"w"</span>, newline=<span class="str">""</span>) <span class="kw">as</span> f:
+    writer = csv.DictWriter(f, fieldnames=[<span class="str">"nombre"</span>, <span class="str">"precio"</span>])
+    writer.writeheader()
+    writer.writerows(productos)</code></pre>
+      <a href="#contacto" class="btn btn--primary">Quiero el mío</a>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <h2 class="section__title">Cómo funciona</h2>
+      <ol class="steps">
+        <li><span class="steps__num">1</span><div><strong>Cuéntame tu problema</strong><p>Me escribes qué tarea te roba horas o qué datos necesitas.</p></div></li>
+        <li><span class="steps__num">2</span><div><strong>Recibe tu cotización</strong><p>Te digo precio fijo y plazo en menos de 24 horas.</p></div></li>
+        <li><span class="steps__num">3</span><div><strong>Código + soporte</strong><p>Recibes el script documentado y funcionando. Reembolso si no cumple lo pactado.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="precios" class="section">
+    <div class="container">
+      <h2 class="section__title">Precios simples</h2>
+      <div class="grid grid--pricing">
+        <article class="card card--pricing">
+          <h3>Scraping puntual</h3>
+          <p class="price">desde $75</p>
+          <ul>
+            <li>Extracción de datos de 1 sitio</li>
+            <li>Entrega en CSV/Excel</li>
+            <li>1 ronda de ajustes</li>
+          </ul>
+          <a href="#contacto" class="btn btn--primary">Empezar</a>
+        </article>
+        <article class="card card--pricing card--featured">
+          <h3>Automatización</h3>
+          <p class="price">desde $200</p>
+          <ul>
+            <li>Script/bot para tu tarea repetitiva</li>
+            <li>Documentación completa</li>
+            <li>2 semanas de soporte</li>
+            <li>Programación de ejecución</li>
+          </ul>
+          <a href="#contacto" class="btn btn--primary">Empezar</a>
+        </article>
+        <article class="card card--pricing">
+          <h3>Paquete pro</h3>
+          <p class="price">desde $350</p>
+          <ul>
+            <li>Varias tareas o scraping continuo</li>
+            <li>Dashboard incluido</li>
+            <li>1 mes de soporte</li>
+          </ul>
+          <a href="#contacto" class="btn btn--primary">Empezar</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section section--dark">
+    <div class="container container--narrow">
+      <h2 class="section__title">Pide tu cotización gratis</h2>
+      <p class="section__lead">Cuéntame qué necesitas. Sin compromiso.</p>
+      <form id="contact-form" class="form">
+        <label>Tu nombre
+          <input type="text" name="nombre" required placeholder="Ana García">
+        </label>
+        <label>Tu email
+          <input type="email" name="email" required placeholder="ana@empresa.com">
+        </label>
+        <label>¿Qué necesitas automatizar o extraer?
+          <textarea name="mensaje" rows="5" required placeholder="Necesito extraer precios de 3 tiendas cada semana y enviarlos a una hoja de cálculo..."></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--full">Enviar y recibir cotización</button>
+        <p class="form__status" id="form-status"></p>
+      </form>
+      <p class="contacto__alt">¿Prefieres directo? Escríbeme a <a href="mailto:hola@jeffer.codes">hola@jeffer.codes</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> jeffer.codes · Automatización & scraping en Python</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
