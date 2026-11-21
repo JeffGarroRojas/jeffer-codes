@@ -80,7 +80,10 @@ productos = resp.json()
     writer = csv.DictWriter(f, fieldnames=[<span class="str">"nombre"</span>, <span class="str">"precio"</span>])
     writer.writeheader()
     writer.writerows(productos)</code></pre>
-      <a href="#contacto" class="btn btn--primary">Quiero el mío</a>
+      <div class="cta-row">
+        <a href="#contacto" class="btn btn--primary">Quiero el mío</a>
+        <a href="https://github.com/JeffGarroRojas/demo-scraping" target="_blank" rel="noopener" class="btn btn--ghost">Ver el código real en GitHub</a>
+      </div>
     </div>
   </section>
 
@@ -158,6 +161,7 @@ productos = resp.json()
   <footer class="footer">
     <div class="container">
       <p>© <span id="year"></span> jeffer.codes · Automatización & scraping en Python</p>
+      <p><a href="https://github.com/JeffGarroRojas">GitHub</a> · <a href="https://jeffgarrorojas.github.io">Portafolio</a></p>
     </div>
   </footer>
 
